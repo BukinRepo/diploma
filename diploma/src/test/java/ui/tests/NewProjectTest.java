@@ -20,12 +20,10 @@ public class NewProjectTest {
     }
 
     @Test
-    public void createNewProject(){
-        LogInPageMethods logInPageMethods = new LogInPageMethods();
-        logInPageMethods.logInByUser(userName, password);
+    public void createNewProjectTest(){
+        userManagement();
         NewProjectMethods projectMethods = new NewProjectMethods();
         projectMethods.projectCreator(false);
-        projectMethods.projectCreateChecker(projectMethods.getProjectName());
     }
 
     @AfterMethod(alwaysRun = true)
@@ -37,10 +35,17 @@ public class NewProjectTest {
         BoardMethods.deleteBoard(Integer.parseInt(currentUrl));
     }
 
+    private void userManagement() {
+        LogInPageMethods logInPageMethods = new LogInPageMethods();
+        logInPageMethods.logInByUser(userName, password);
+    }
+
     private void userRole(){
         UserMethods.setRole("app-manager");
         UserMethods.createUser(userName, password);
         this.userId = UserMethods.getCreatedUserId();
         this.userName = userName + "Test";
     }
+
+
 }

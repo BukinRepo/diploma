@@ -6,7 +6,7 @@ import api.bodys.BoardNameBody;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.testng.Assert;
-import utils.Urls;
+import configs.Urls;
 
 import java.util.List;
 

@@ -7,13 +7,14 @@ import com.codeborne.selenide.SelenideElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import configs.Urls;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$x;
 import static com.codeborne.selenide.WebDriverRunner.closeWebDriver;
 
 public class LogInPageMethods {
-    private static final String BASE_URL = "http://127.0.0.1";
+    private static final String BASE_URL = Urls.getBaseUrl();
     private static SelenideElement dashboardPage = $("#main");
     private static SelenideElement loginError = $x("//div/p[@class='alert alert-error']");
     private static SelenideElement usernameForm = $("#form-username");

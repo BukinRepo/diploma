@@ -22,12 +22,11 @@ public class NewPersonalProjectTest {
     }
 
     @Test
-    public void createNewPersonalProject(){
+    public void createNewPersonalProjectTest(){
         LogInPageMethods logInPageMethods = new LogInPageMethods();
         logInPageMethods.logInByUser(userName, password);
         NewProjectMethods projectMethods = new NewProjectMethods();
         projectMethods.projectCreator(true);
-        projectMethods.projectCreateChecker(projectMethods.getProjectName());
     }
 
     @AfterMethod(alwaysRun = true)

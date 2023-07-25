@@ -13,6 +13,8 @@
             <class name="ui.tests.LoginUserTest"/>
             <class name="ui.tests.NewProjectTest"/>
             <class name="ui.tests.NewPersonalProjectTest"/>
+            <class name="ui.tests.CreateAndCloseTaskTest"/>
+            <class name="ui.tests.AddCommentInTaskTest"/>
         </classes>
 
     </test>

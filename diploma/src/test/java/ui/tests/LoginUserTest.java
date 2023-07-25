@@ -23,13 +23,13 @@ public class LoginUserTest {
         logInPageMethods.successLogin();
     }
 @Test
-    public void loginUserWrongUserNameTest(){
+    public void negativeLoginUserWrongUserNameTest(){
         LogInPageMethods logInPageMethods = new LogInPageMethods();
         logInPageMethods.logInByUser(userName + "1", password);
         logInPageMethods.checkLoginError();
     }
 @Test
-    public void loginUserWrongPasswordTest(){
+    public void negativeLoginUserWrongPasswordTest(){
         LogInPageMethods logInPageMethods = new LogInPageMethods();
         logInPageMethods.logInByUser(userName, password + "1");
         logInPageMethods.checkLoginError();
