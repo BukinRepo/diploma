@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.bukin.dmytro</groupId>
-    <artifactId>diploma</artifactId>
+    <artifactId>Bukin</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -74,6 +74,8 @@
                 <configuration>
                     <suiteXmlFiles>
                         <suiteXmlFile>src/test/resources/regression.xml</suiteXmlFile>
+                        <suiteXmlFile>src/test/resources/api_tests.xml</suiteXmlFile>
+                        <suiteXmlFile>src/test/resources/ui_tests.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/1.9.19/aspectjweaver-1.9.19.jar"
