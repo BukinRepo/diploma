@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Use tests automation">
+
+    <test name="Regression testing">
+        <classes>
+            <class name="api.tests.board.GetAllBoardsTest"/>
+            <class name="api.tests.board.CreateAndDeleteBoardTest"/>
+            <class name="api.tests.task.GetAllTaskTest"/>
+            <class name="api.tests.task.CreateAndDeleteTaskTest"/>
+            <class name="api.tests.user.GetAllUsersTest"/>
+            <class name="api.tests.user.CreateAndDeleteUserTest"/>
+
+            <class name="ui.tests.LoginUserTest"/>
+            <class name="ui.tests.NewProjectTest"/>
+            <class name="ui.tests.NewPersonalProjectTest"/>
+            <class name="ui.tests.CreateAndCloseTaskTest"/>
+            <class name="ui.tests.AddCommentInTaskTest"/>
+        </classes>
+
+    </test>
+</suite>
